@@ -75,7 +75,8 @@ order by PercentPopulationInfected desc
 ```sql
 with PopVsVac  as (
 select dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations,
-sum(Convert(bigint,vac.new_vaccinations)) OVER( partition by dea.location Order by dea.location, dea.date) as RollingPeopleVaccinated
+sum(Convert(bigint,vac.new_vaccinations)) 
+OVER( partition by dea.location Order by dea.location, dea.date) as RollingPeopleVaccinated
 from PortfolioProject..Death as dea
 join PortfolioProject..Vaccination as vac
 on dea.location = vac.location and dea.date = vac.date
