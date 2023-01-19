@@ -70,4 +70,19 @@ order by PercentPopulationInfected desc
 
 
 
+### 5. Rolling People Vaccinated and % of Population Vaccinated
+
+```sql
+with PopVsVac  as (
+select dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations,
+sum(Convert(bigint,vac.new_vaccinations)) OVER( partition by dea.location Order by dea.location, dea.date) as RollingPeopleVaccinated
+from PortfolioProject..Death as dea
+join PortfolioProject..Vaccination as vac
+on dea.location = vac.location and dea.date = vac.date
+where dea.continent is not null
+)
+
+select *, (RollingPeopleVaccinated/population)* 100 as RollingPeopleVaccinatedInPercent  from PopVsVac
+```
+![image](https://user-images.githubusercontent.com/103417972/213474226-a1d9da2a-76e5-48fb-8e2d-7177dc8993ec.png)
 
