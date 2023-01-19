@@ -25,6 +25,8 @@ order by 1,2
 
 ![image](https://user-images.githubusercontent.com/103417972/213464656-bc911ccd-f103-4d2b-b6b4-0287fa88cd02.png)
 
+
+
 ### 2.  Death Count by Continent
 
 ```sql
@@ -37,6 +39,9 @@ order by TotalDeathCount desc
 ```
 ![image](https://user-images.githubusercontent.com/103417972/213466130-80806a2b-5c89-46f2-84de-8aa7700ffca8.png)
 
+
+
+
 ### 3. Percentage of Population which had covid
 
 ```sql
@@ -47,6 +52,9 @@ Group by Location, Population
 order by PercentPopulationInfected desc
 ```
 ![image](https://user-images.githubusercontent.com/103417972/213466866-48fd37f9-97da-4d75-89da-18a600ff8006.png)
+
+
+
 
 ### 4. Highest Infection Count
 ```sql
