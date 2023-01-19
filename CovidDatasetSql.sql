@@ -87,7 +87,6 @@ select *, (RollingPeopleVaccinated/population)* 100 as RollingPeopleVaccinatedIn
 
 
 
--- Queries for Tablue Project
 
 -- 1. 
 
