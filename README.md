@@ -33,7 +33,8 @@ order by 1,2
 Select location, SUM(cast(new_deaths as int)) as TotalDeathCount
 From PortfolioProject..Death
 Where continent is null 
-and location not in ('World', 'European Union', 'International', 'High income','Upper middle income','Low income', 'Lower middle income')
+and location not in ('World', 'European Union', 'International', 'High income',
+'Upper middle income','Low income', 'Lower middle income')
 Group by location
 order by TotalDeathCount desc
 ```
