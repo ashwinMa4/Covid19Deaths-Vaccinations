@@ -87,3 +87,11 @@ select *, (RollingPeopleVaccinated/population)* 100 as RollingPeopleVaccinatedIn
 ```
 ![image](https://user-images.githubusercontent.com/103417972/213474226-a1d9da2a-76e5-48fb-8e2d-7177dc8993ec.png)
 
+
+## Vaccination Data Analysis
+
+I have created a Viz using Tablue 
+
+![image](https://user-images.githubusercontent.com/103417972/213723827-eee3a996-b15c-44d3-9476-f370d47db0ab.png)
+
+Find the viz here -> [Covid Vaccination Visualization](https://public.tableau.com/views/CovidVaccinationDashboard_16742249419540/GlobalVaccineTracker?:language=en-US&:display_count=n&:origin=viz_share_link)
