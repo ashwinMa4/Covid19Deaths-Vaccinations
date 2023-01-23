@@ -88,6 +88,10 @@ select *, (RollingPeopleVaccinated/population)* 100 as RollingPeopleVaccinatedIn
 ![image](https://user-images.githubusercontent.com/103417972/213474226-a1d9da2a-76e5-48fb-8e2d-7177dc8993ec.png)
 
 
+I have created a Dashboard for above queries. [here](https://public.tableau.com/views/CovidDashboardTutorial_16744713624890/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+
+
+
 ## Vaccination Data Analysis
 
 I have created a Viz using Tablue 
